@@ -1,0 +1,107 @@
+/* Overall container styling */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #f4f4f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Container hover effect */
+.container:hover {
+  transform: scale(1.03);
+}
+
+/* Form labels */
+label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+/* Input fields */
+input[type="file"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+/* Input fields hover effect */
+input[type="file"]:hover {
+  border-color: #0066ff;
+}
+
+/* Button styling */
+button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  background-color: #0066ff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0px 3px 6px rgba(0, 102, 255, 0.3);
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #0055cc;
+  box-shadow: 0px 5px 12px rgba(0, 102, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Button active effect */
+button:active {
+  transform: translateY(0);
+  box-shadow: 0px 3px 6px rgba(0, 102, 255, 0.3);
+}
+
+/* Generated GIF display area */
+#result {
+  margin-top: 2rem;
+}
+
+#result h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Responsive generated GIF */
+#result img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Image hover effect */
+#result img:hover {
+  transform: scale(1.05);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
